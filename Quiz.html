@@ -2,9 +2,48 @@
 <html lang="ja">
 	<head>
 	    <meta charset="UTF-8">
-	    <title>Quiz</title>
-	</head>
-	<body>
-		<script src="Quiz.js"></script>
-	</body>
+	  <title>クイズ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 40px;
+    }
+    .quiz-box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      max-width: 600px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .options label {
+      margin-right: 20px;
+    }
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>クイズ</h2>
+  <div class="quiz-box">
+    <div class="question">
+      システム開発の早い段階で、目に見える形で利用者の要求が確認できるように確認用のソフトウェアを作成するソフトウェア開発モデルとして、最も適切なのはどれか。
+    </div>
+    <div class="options">
+      <input type="radio" name="answer" id="a1">
+      <label for="a1">アジャイル</label>
+
+      <input type="radio" name="answer" id="a2">
+      <label for="a2">ウォーターフォール</label>
+
+      <input type="radio" name="answer" id="a3">
+      <label for="a3">スパイラル</label>
+
+      <input type="radio" name="answer" id="a4">
+      <label for="a4">プロトタイピング</label>
+    </div>
+    <button>解答する</button>
+  </div>
+</body>
 </html>
